@@ -16,13 +16,23 @@
   <!-- ============ NAVBAR ============ -->
   <nav>
     <div class="nav-logo">Samish.</div>
-    <ul class="nav-links">
+  
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  
+    <ul class="nav-links" id="navLinks">
       <li><a href="#hero">Home</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#achievements">Achievements</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
+  
+    
+
 
 
   <!-- ============ HERO / NAME ============ -->
@@ -215,5 +225,15 @@
     Made by Pradhan D Samish · 2025
   </footer>
 
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+  
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+      hamburger.classList.toggle("open");
+    });
+  </script>
+  
 </body>
 </html>
